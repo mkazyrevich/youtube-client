@@ -6,5 +6,5 @@ export interface SearchItem {
     'likeCount': string;
     'dislikeCount': string;
     'commentCount': string;
-  }
+  };
 }
