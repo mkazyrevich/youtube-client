@@ -1,1 +1,5 @@
-<p>search-results works!</p>
+<div class = "searched-videos">
+  <app-search-item *ngFor="let video of searchedVideos"
+    [video] = "video">
+  </app-search-item>
+</div>

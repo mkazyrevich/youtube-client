@@ -1,1 +1,13 @@
-<p>header works!</p>
+<ul class = 'header-menu'>
+  <li class = 'icon'><img src="../../../assets/images/logo.png" alt="" width="50"></li>
+  <li class = 'search'>
+      <input type="text" (input) = "query" class = "search--input" placeholder="What are you want to find out?" >
+      <button mat-button (click) = "displaySearchResults()" class = "search--button">Search</button>
+  </li>
+  <li>
+    <button mat-button (click) = "displayFilterSettings()" class = "settings--button">
+      <!-- <img src="../../../assets/images/settings.png" alt=""> -->
+    </button>
+  </li>
+</ul>
+

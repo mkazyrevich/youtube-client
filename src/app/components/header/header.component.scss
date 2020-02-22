@@ -1,0 +1,64 @@
+.header-menu {
+  width: 100%;
+  height: min-content;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  justify-content: center;
+  background: #E5E5E5;
+}
+
+.icon {
+  padding: 0;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  padding: 0 0 5px 0;
+
+  &--input {
+    height: 25px;
+    width: 400px;
+    margin: 0 0 0 10px;
+    background-color: #EFEFEF;
+    border: none;
+    padding: 0;
+  }
+
+  &--button {
+    height: 25px;
+    width: 80px;
+    padding: 0;
+    margin: 0;
+
+    background-color: #2F80ED;
+    border-radius: 0px 4px 4px 0px;
+
+    font: {
+      family: Roboto;
+      style: normal;
+      weight: normal;
+      size: 12px;
+    }
+
+    line-height: 14px;
+    color: #FFFFFF;
+
+  }
+}
+
+.settings--button {
+  min-width: 25px;
+  width: 25px;
+  height: 25px;
+  margin: 0 0 5px 10px;
+  padding: 0;
+  background-color: #2F80ED;
+  border-radius: 5px;
+  background-image: url(../../../assets/images/settings.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}

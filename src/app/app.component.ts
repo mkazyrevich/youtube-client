@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { ViewChild } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  public title: string = 'youtube-client';
+  public display: boolean;
+  public displayFilter: boolean;
+
+  public displayResults(display: boolean): void {
+    this.display = display;
+  }
+
+  public displayFilterSettings(displayFilter: boolean): void {
+    this.displayFilter = displayFilter;
+  }
 }

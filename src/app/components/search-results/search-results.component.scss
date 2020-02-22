@@ -1,0 +1,9 @@
+.searched-videos {
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  justify-content: center;
+  margin: 30px auto 0 auto;
+}
