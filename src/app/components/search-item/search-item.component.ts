@@ -10,9 +10,9 @@ export class SearchItemComponent implements OnInit {
 
   @Input() public video: ISearchItem;
 
-  constructor() { }
+  constructor() {
+  }
 
   public ngOnInit(): void {
   }
-
 }

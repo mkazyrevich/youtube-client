@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+// import { display } from 'src/app/components/search/search.component';
+import { Component, OnInit, ViewChild, ElementRef, Inject, Input } from '@angular/core';
 import { ISearchItem } from 'src/app/models/search-item.model';
 import { response } from 'src/assets/response';
 
@@ -11,10 +12,13 @@ const searchedVideos: ISearchItem[] = response.items;
 export class SearchResultsComponent implements OnInit {
 
   public searchedVideos: ISearchItem[];
+  @Input() public display: boolean;
 
-  constructor() { }
+  constructor() {
+  }
 
   public ngOnInit(): void {
     this.searchedVideos = searchedVideos;
   }
+
 }

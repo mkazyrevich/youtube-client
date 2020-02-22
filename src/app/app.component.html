@@ -1,1 +1,3 @@
-<app-search-results></app-search-results>
+<app-header (onSearch) = 'displayResults($event)' (onDisplayFilter)="displayFilterSettings($event)"></app-header>
+<app-filter *ngIf = 'displayFilter'></app-filter>
+<app-search-results *ngIf = 'display'></app-search-results>
